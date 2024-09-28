@@ -1,38 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .cuadrado { 
-            width: 200px;
-            height: 200px;
-            background-color: sienna;
-            transition: all 1.0s;
-        }
-
-        -cuadrado:hover {
-            border-radius: 50%;
-            transition: all 0.9s;
-        }
-    </style>
+    <title>Portfolio de Publicista</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body style="background-color: antiquewhite;">
-    <marquee behavior="" direction="">Hellooooo</marquee>
-    <h1 style="background-color: brown;"><center>Hoja De Vida</center></h1>
-    <h2><center>Claudia Quintero</center></h2>
-    <h3>Especilista en creación de estrategias visuales y comunicativas
-        <br> para marcas dentro del sector inmobiliario, con más de 5 años de experiencia. 
-    
-    </h3>
-<img src="https://www.hola.com/horizon/landscape/6a53cd5134b2-getty-chica-feliz-t.jpg" alt="">
-<ol>
-    <li>Investigación</li>
-    <li>Comunicación</li>
-    <li>Diseño</li>
-</ol>
-<div class="cuadrado"></div>
-</body>
+<body>
 
+    <header class="bg-dark text-white text-center py-5">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/wavy-bob-6459152243fd2.jpeg?resize=980:*" alt="Foto de [Nombre]" class="rounded-circle mb-4" style="width: 150px; height: 150px;">
+        <h1>Hola, soy Maria Cardona</h1>
+        <p>Publicista Profesional | Creativa | Apasionada por la comunicación efectiva</p>
+    </header>
+
+    <div class="container my-5">
+        <section>
+            <h2>Sobre mí</h2>
+            <p>Soy una publicista con más de 5 años de experiencia en el desarrollo de campañas creativas y estrategias de comunicación que impactan. Me encanta ayudar a las marcas a contar su historia de una manera atractiva y efectiva.</p>
+        </section>
+
+        <section class="my-5">
+            <h2>Servicios</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Desarrollo de Campañas Publicitarias</li>
+                <li class="list-group-item">Gestión de Redes Sociales</li>
+                <li class="list-group-item">Consultoría de Marca</li>
+                <li class="list-group-item">Creación de Contenido</li>
+                <li class="list-group-item">Análisis de Mercado</li>
+            </ul>
+        </section>
+
+        <section class="my-5">
+            <h2>Proyectos Destacados</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2022/01/17/61e57183d0081.jpeg" class="card-img-top" alt="Campaña 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Campaña "Just Do It"</h5>
+                            <p class="card-text">Una de las campañas más icónicas de Nike que ha inspirado a millones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://assets.isu.pub/document-structure/200814013415-694c62afc2db0a6e831830d3f575dfa2/v1/68a4a670fec6d48daa54945e4375d4f0.jpg?width=720&quality=85%2C50" class="card-img-top" alt="Campaña 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Campaña "Share a Coke"</h5>
+                            <p class="card-text">Una campaña innovadora de Coca-Cola que personalizó sus botellas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://static.wixstatic.com/media/bc9d97_010b39fd86b946e28d553cfb46159682~mv2.png/v1/fill/w_560,h_324,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/dwtd4_014-00_launch_1920x1080.png" class="card-img-top" alt="Campaña 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Campaña "Dumb Ways to Die"</h5>
+                            <p class="card-text">Una campaña viral de seguridad pública que se convirtió en un fenómeno cultural.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <h2>Contacto</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 [Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
